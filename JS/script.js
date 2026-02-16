@@ -17,15 +17,15 @@ window.addEventListener('mousemove', e => {
     cursorOutline.style.top  = `${e.clientY}px`;
 });
 
-// Typing Effect
+// Typing Effect – your exact new sequence
 const typingElement = document.querySelector('.typing');
 const roles = [
     "Hi there",
-    "Muhammad Ahmad here",
-    "UCP – Computer Science",
-    "3rd Semester",
+    "I am Muhammad Ahmad",
+    "A student at UCP – Computer Science",
+    "in 3rd Semester",
     "Exploring Code & Logic",
-    "Future Software Engineer"
+    "And a Future Software Engineer"
 ];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 
