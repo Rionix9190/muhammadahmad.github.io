@@ -17,9 +17,16 @@ window.addEventListener('mousemove', e => {
     cursorOutline.style.top  = `${e.clientY}px`;
 });
 
-// Typing Effect
+// Typing Effect – UPDATED with your chosen sequence
 const typingElement = document.querySelector('.typing');
-const roles = ["Student.", "Learner.", "Coder.", "Aspiring Engineer."];
+const roles = [
+    "Hi there",
+    "Muhammad Ahmad here",
+    "UCP – Computer Science",
+    "3rd Semester",
+    "Exploring Code & Logic",
+    "Future Software Engineer"
+];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 
 function type() {
@@ -28,15 +35,15 @@ function type() {
         ? current.substring(0, charIndex--)
         : current.substring(0, charIndex++);
     
-    let speed = isDeleting ? 40 : 120;
+    let speed = isDeleting ? 40 : 100; // slightly faster typing for longer phrases
     
     if (!isDeleting && charIndex === current.length) {
-        speed = 1800;
+        speed = 2000; // longer pause after full phrase
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         roleIndex = (roleIndex + 1) % roles.length;
-        speed = 400;
+        speed = 500; // small pause before next
     }
     
     setTimeout(type, speed);
