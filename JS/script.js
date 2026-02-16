@@ -17,7 +17,7 @@ window.addEventListener('mousemove', e => {
     cursorOutline.style.top  = `${e.clientY}px`;
 });
 
-// Typing Effect – UPDATED with your chosen sequence
+// Typing Effect
 const typingElement = document.querySelector('.typing');
 const roles = [
     "Hi there",
@@ -35,15 +35,15 @@ function type() {
         ? current.substring(0, charIndex--)
         : current.substring(0, charIndex++);
     
-    let speed = isDeleting ? 40 : 100; // slightly faster typing for longer phrases
+    let speed = isDeleting ? 40 : 120;
     
     if (!isDeleting && charIndex === current.length) {
-        speed = 2000; // longer pause after full phrase
+        speed = 1800;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         roleIndex = (roleIndex + 1) % roles.length;
-        speed = 500; // small pause before next
+        speed = 400;
     }
     
     setTimeout(type, speed);

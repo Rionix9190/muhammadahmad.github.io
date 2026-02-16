@@ -16,7 +16,7 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Muhammad Ahmad<span>.</span></div>   <!-- ← Changed here -->
+        <div class="logo">Muhammad Ahmad<span>.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -39,7 +39,7 @@
             <div class="hero-content reveal">
                 <span class="badge">3rd Semester Student</span>
                 <h1>Welcome</h1>
-                <h2 class="typing-container">I'm <span class="typing"></span><span class="cursor-blink">|</span></h2>   <!-- kept "I'm" for natural flow -->
+                <h2 class="typing-container">I'm <span class="typing"></span><span class="cursor-blink">|</span></h2>
                 <p class="hero-subtitle">based in Lahore, Pakistan.</p>
             </div>
             <div class="hero-visual reveal">
@@ -49,8 +49,171 @@
             </div>
         </section>
 
-        <!-- rest of your HTML remains exactly the same -->
-        <!-- ... About, Resume, Portfolio, Contact, footer ... -->
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Know Me More</p>
+                </div>
+                
+                <div class="about-content reveal">
+                    <div class="about-text">
+                        <h3>I'm <span class="highlight">Muhammad Ahmad</span>, a Computer Science Student</h3>
+                        <p>Hello! I'm a 3rd semester Computer Science student at UCP (University of Central Punjab), passionate about learning and growing in the field of technology.</p>
+                        
+                        <p>Currently building my foundation in programming through coursework and personal projects. I enjoy solving problems with code and learning new technologies. My main focus areas include C++, basic web development (HTML, CSS, JavaScript), and problem-solving.</p>
+                        
+                        <p>I'm open to internship opportunities where I can learn from experienced professionals and contribute to real projects while I continue my studies.</p>
+
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="label">Name:</span>
+                                <span class="value">Muhammad Ahmad</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email:</span>
+                                <span class="value"><a href="mailto:ahmadrionix@gmail.com">ahmadrionix@gmail.com</a></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Age:</span>
+                                <span class="value">20</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">From:</span>
+                                <span class="value">Lahore, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Resume</h2>
+                    <p class="section-subtitle">Education & Projects</p>
+                </div>
+
+                <div class="resume-content">
+                    <div class="resume-column reveal">
+                        <h3 class="resume-column-title">Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time-dot"></div>
+                                <div class="time-content">
+                                    <span class="time-period">Mar 2025 – Present</span>
+                                    <h4>Bachelor of Science - Computer Science</h4>
+                                    <span class="institution">University of Central Punjab (UCP)</span>
+                                    <p>Currently in 3rd semester – studying Data Structures, Algorithms, OOP, and fundamentals.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="time-dot"></div>
+                                <div class="time-content">
+                                    <span class="time-period">Sep 2024 – Jan 2025</span>
+                                    <h4>Bachelor of Science - Computer Science</h4>
+                                    <span class="institution">COMSATS Institute of Information Technology</span>
+                                    <p>Initial semester before transferring to UCP.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-column reveal">
+                        <h3 class="resume-column-title">Projects & Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time-dot"></div>
+                                <div class="time-content">
+                                    <span class="time-period">Jan 2025</span>
+                                    <h4>Hospital Management System</h4>
+                                    <span class="institution">Academic Project (C++)</span>
+                                    <p>Console-based hospital record system with patient/doctor management, appointments, and file handling using OOP concepts.</p>
+                                    <div class="project-link">
+                                        <a href="https://github.com/Rionix9190/Hospital-Managment-System" target="_blank" class="btn-project">
+                                            <i class="fab fa-github"></i> View Repository
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="time-dot"></div>
+                                <div class="time-content">
+                                    <span class="time-period">2024 – Present</span>
+                                    <h4>Freelance Data Entry</h4>
+                                    <span class="institution">Small Projects</span>
+                                    <p>Handling basic data entry tasks to gain practical experience while studying.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills (no percentages) -->
+                <div class="skills-section reveal">
+                    <h3 class="resume-column-title">My Skills</h3>
+                    <ul class="skill-list">
+                        <li>C++ Programming</li>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git & GitHub Basics</li>
+                        <li>Microsoft Excel</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">My Work</p>
+                </div>
+
+                <div class="projects-grid reveal">
+                    <div class="project-card">
+                        <h3>Hospital Management System</h3>
+                        <p>A console-based hospital automation system built with C++ (Programming Fundamentals project). Features patient/doctor records, appointments, and file-based persistence.</p>
+                        <a href="https://github.com/Rionix9190/Hospital-Managment-System" target="_blank" class="project-link">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+
+                    <div class="project-card coming-soon">
+                        <h3>More Projects Coming Soon</h3>
+                        <p>Working on web apps, Python tools, and full-stack experiments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (minimal) -->
+        <section id="contact" class="section contact-minimal">
+            <div class="container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+                
+                <div class="contact-simple reveal">
+                    <p>Lahore, Pakistan</p>
+                    <p><a href="mailto:ahmadrionix@gmail.com">ahmadrionix@gmail.com</a></p>
+                    
+                    <div class="social-icons">
+                        <a href="https://github.com/Rionix9190" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-ahmad-62812b365/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
